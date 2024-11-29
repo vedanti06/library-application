@@ -50,6 +50,6 @@ Book Title, Author, Genre, Publication Year, Description
 All books in the catalog
 Sorted by publication year in descending order
 Key book information at a glance
-![Books](screenshot_books_added.PNG)
+![Books](/screenshots/screenshot_books_added.PNG)
 **Search Page**: Demonstrates the book search functionality in the Book Catalog application.
 ![Search Results](/screenshots/search_screenshot.PNG)
