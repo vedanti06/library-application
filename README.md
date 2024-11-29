@@ -40,3 +40,8 @@ This is a Flask-based web application that uses Elasticsearch to manage a book c
 4. Open a web browser and navigate to `http://localhost:5000` to access the Book Catalog application.
 
 Make sure to replace the placeholder Elasticsearch authentication credentials in `main.py` with your actual credentials for secure access.
+
+## Application screenshots
+![Add Book](/screenshots/screenshot_add book.PNG)
+![Books](screenshot_books added.PNG)
+![Search books](search_screenshot.PNG)
