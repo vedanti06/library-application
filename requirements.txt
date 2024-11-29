@@ -1,0 +1,5 @@
+flask==2.1.0
+elasticsearch==8.4.3
+python-dotenv==0.21.0
+
+elasticsearch-dsl==8.14.0

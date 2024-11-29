@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <div class="search-results">
+        <h2>Search Results</h2>
+        
+        {% if error %}
+            <div class="error-message">
+                <p>An error occurred during search: {{ error }}</p>
+            </div>
+        {% endif %}
+        
+        {% if books %}
+            <div class="book-grid">
+                {% for book in books %}
+                <div class="book-card">
+                    <h3>{{ book.title }}</h3>
+                    <p><strong>Author:</strong> {{ book.author }}</p>
+                    <p><strong>Genre:</strong> {{ book.genre }}</p>
+                    <p><strong>Publication Year:</strong> {{ book.publication_year }}</p>
+                    <p class="description">{{ book.description[:200] }}{% if book.description|length > 200 %}...{% endif %}</p>
+                    <div class="book-actions">
+                        <a href="{{ url_for('edit_book', book_id=book.id) }}" class="btn edit">Edit</a>
+                        <a href="{{ url_for('delete_book', book_id=book.id) }}" class="btn delete" onclick="return confirm('Are you sure?')">Delete</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="no-results">No books found matching your search criteria.</p>
+        {% endif %}
+    </div>
+</main>
+{% endblock %}

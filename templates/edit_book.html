@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+    <form method="POST" class="book-form">
+        <h2>Edit Book</h2>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" value="{{ book.title }}" required>
+        </div>
+        <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" value="{{ book.author }}" required>
+        </div>
+        <div class="form-group">
+            <label for="genre">Genre</label>
+            <select id="genre" name="genre" required>
+                <option value="Fiction" {% if book.genre == 'Fiction' %}selected{% endif %}>Fiction</option>
+                <option value="Non-Fiction" {% if book.genre == 'Non-Fiction' %}selected{% endif %}>Non-Fiction</option>
+                <option value="Science Fiction" {% if book.genre == 'Science Fiction' %}selected{% endif %}>Science Fiction</option>
+                <option value="Mystery" {% if book.genre == 'Mystery' %}selected{% endif %}>Mystery</option>
+                <option value="Biography" {% if book.genre == 'Biography' %}selected{% endif %}>Biography</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="publication_year">Publication Year</label>
+            <input type="number" id="publication_year" name="publication_year" min="1000" max="2024" value="{{ book.publication_year }}" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required>{{ book.description }}</textarea>
+        </div>
+        <button type="submit" class="btn">Update Book</button>
+    </form>
+</main>
+{% endblock %}

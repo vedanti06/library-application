@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Catalog - Elasticsearch CRUD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Book Catalog</h1>
+            <nav>
+                <a href="{{ url_for('index') }}" class="btn">Home</a>
+                <a href="{{ url_for('add_book') }}" class="btn">Add New Book</a>
+            </nav>
+            <form action="{{ url_for('search_books') }}" method="get" class="search-form">
+                <input type="text" name="query" placeholder="Search books...">
+                <button type="submit">Search</button>
+            </form>
+        </header>
+
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
