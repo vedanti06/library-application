@@ -45,11 +45,11 @@ Make sure to replace the placeholder Elasticsearch authentication credentials in
 
 **Add book Page**:Demonstrates the Add Book form in the Book Catalog application. Users can input details such as:
 Book Title, Author, Genre, Publication Year, Description
-![Add Book](/screenshots/screenshot_add book.PNG)
+![Add Book](/screenshots/screenshot_addbook.PNG)
 **Book listing Page**:The screenshot shows the main book listing page, which displays:
 All books in the catalog
 Sorted by publication year in descending order
 Key book information at a glance
-![Books](screenshot_books added.PNG)
+![Books](screenshot_booksadded.PNG)
 **Search Page**: Demonstrates the book search functionality in the Book Catalog application.
 ![Search Results](/screenshots/search_screenshot.PNG)
