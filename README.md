@@ -30,12 +30,12 @@ This is a Flask-based web application that uses Elasticsearch to manage a book c
 2. Install the required dependencies using the `requirements.txt` file:
    ```bash
    pip install -r requirements.txt
-   ```[2]
+   ```
 
 3. Run the Flask application:
    ```bash
    python main.py
-   ```[1]
+   ```
 
 4. Open a web browser and navigate to `http://localhost:5000` to access the Book Catalog application.
 
