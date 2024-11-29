@@ -44,4 +44,7 @@ Make sure to replace the placeholder Elasticsearch authentication credentials in
 ## Application screenshots
 ![Add Book](/screenshots/screenshot_add book.PNG)
 ![Books](screenshot_books added.PNG)
-![Search books](search_screenshot.PNG)
+![Search Results](/screenshots/search_screenshot.PNG)
+
+**Search Page**: Demonstrates the book search functionality in the Book Catalog application.
+
